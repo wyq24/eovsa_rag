@@ -1,0 +1,38 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Data artifacts and local corpora
+data/raw/
+data/processed/
+data/processed_old/
+data/vector_db/
+data/*.zip
+data/**/*.zip
