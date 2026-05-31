@@ -11,8 +11,8 @@ Place source material under `data/raw`:
 - `data/raw/code`: code and configuration snapshots used as retrieval context.
 - `data/raw/slack`: optional private exports.
 
-The full `data/raw` tree is ignored by git. Keep raw corpora local or store
-them in an approved private data location.
+Review raw corpora before committing them. Do not include private exports or
+credentials.
 
 To scrape wiki pages interactively:
 
@@ -41,7 +41,8 @@ python enhanced_processor_complete_all_kind.py \
   --no-ai
 ```
 
-The output JSON can be large and is ignored by git.
+The output JSON can be large. Commit it only when the repository should ship
+with a prebuilt processed corpus.
 
 ## 3. Build Embeddings
 
@@ -54,7 +55,7 @@ python vector_database_creator.py \
 ```
 
 The embedding model defaults to OpenAI embeddings. The Chroma database is stored
-under `data/vector_db` and is ignored by git.
+under `data/vector_db`.
 
 ## 4. Validate Retrieval
 
@@ -84,4 +85,4 @@ When source material changes:
 3. Rebuild the vector database.
 4. Smoke-test `llm_agent.py`.
 5. Test a few real questions in Streamlit.
-6. Commit only source code, docs, and configuration templates.
+6. Commit regenerated data only after checking that it contains no secrets.

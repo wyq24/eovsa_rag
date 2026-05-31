@@ -19,16 +19,14 @@ local `.env`.
 
 ## Data
 
-Generated retrieval artifacts are ignored by git:
+These local files are ignored by git:
 
-- `data/raw`
-- `data/processed`
-- `data/vector_db`
 - `data/processed_old`
 - zip archives
+- `.env` and `.env.*`
 
-If private or operational raw data is required for a local build, document where
-to obtain it outside this repository.
+Raw and generated RAG data may be committed for reproducible demos, but inspect
+it first. Do not include private exports or credentials.
 
 ## Pre-Commit Checks
 

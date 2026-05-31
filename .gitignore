@@ -29,10 +29,6 @@ env/
 tmp/
 temp/
 
-# Data artifacts and local corpora
-data/raw/
-data/processed/
+# Older generated data artifacts and local archives
 data/processed_old/
-data/vector_db/
 data/*.zip
-data/**/*.zip

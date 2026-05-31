@@ -1,6 +1,7 @@
-# Local Data
+# Data
 
-The data directories are intentionally untracked.
+This repository can include the current raw corpus, processed chunks, and Chroma
+vector database for reproducible local demos.
 
 Use this layout for local builds:
 
@@ -8,5 +9,5 @@ Use this layout for local builds:
 - `data/processed`: processed chunk JSON files.
 - `data/vector_db`: generated Chroma database and metadata.
 
-Do not commit raw private corpora, generated vector databases, processed JSON,
-zip archives, or API keys.
+Do not commit raw private corpora, root-level zip archives, API keys, or any
+other credentials.

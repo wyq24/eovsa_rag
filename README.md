@@ -14,13 +14,12 @@ Streamlit chat UI.
 - `enhanced_processor_complete_all_kind.py`: multi-language processor variant.
 - `vector_database_creator.py`: Chroma vector database builder.
 - `wiki_scraper.py`: helper for collecting wiki pages.
-- `data`: local source corpora and generated retrieval artifacts. These files
-  are intentionally ignored by git because they may contain private operational
-  documentation or large generated data.
+- `data/raw`: source corpus used by the processing pipeline.
+- `data/processed`: processed chunk JSON and related artifacts.
+- `data/vector_db`: generated Chroma database and metadata for local retrieval.
 
-Generated files are intentionally not committed, including `.env`,
-`data/raw`, `data/processed`, `data/vector_db`, zip archives, caches, and IDE
-metadata.
+Local-only files are intentionally not committed, including `.env`, root-level
+data zip archives, caches, and IDE metadata.
 
 ## Requirements
 

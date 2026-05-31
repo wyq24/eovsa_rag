@@ -9,8 +9,7 @@ database creation, and answer generation.
 
 `wiki_scraper.py` can collect wiki pages into Markdown files under
 `data/raw/wiki`. Code and configuration snapshots can live under
-`data/raw/code`. The full `data/raw` tree is intentionally ignored by git
-because it may contain private operational documentation or conversation data.
+`data/raw/code`.
 
 ### Chunk Processing
 
@@ -27,7 +26,8 @@ and cross-reference hints. AI enrichment can be disabled with `--no-ai`.
 - `data/vector_db/chunk_metadata.json`: metadata keyed by chunk ID.
 - `data/vector_db/database_stats.json`: summary counts for inspection.
 
-These files are generated artifacts and are ignored by git.
+These files are committed in this repository so the current RAG index can be
+used without rebuilding.
 
 ### Retrieval And Generation
 

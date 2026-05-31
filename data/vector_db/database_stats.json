@@ -1,0 +1,69 @@
+{
+  "total_chunks": 1262,
+  "creation_date": "2025-08-09T15:25:46.413683",
+  "chunk_types": {
+    "function": 484,
+    "module": 53,
+    "class": 21,
+    "method": 96,
+    "command_handler": 3,
+    "general": 503,
+    "procedure": 86,
+    "command_reference": 16
+  },
+  "chunk_levels": {
+    "level_1": 599,
+    "level_3": 53,
+    "level_2": 610
+  },
+  "operational_contexts": {
+    "calibration": 138,
+    "monitoring": 34,
+    "tracking": 49,
+    "observation": 71,
+    "general": 72,
+    "control": 10,
+    "troubleshooting": 25,
+    "configuration": 12,
+    "command_execution": 3,
+    "procedure": 86
+  },
+  "hardware_coverage": {
+    "antenna": 89,
+    "roach": 5,
+    "lo": 276,
+    "if": 339,
+    "sensor": 2,
+    "acc": 40,
+    "correlator": 9,
+    "feed": 13,
+    "dish": 5,
+    "receiver": 13,
+    "motor": 1,
+    "frontend": 2,
+    "backend": 1
+  },
+  "command_coverage": {
+    "Y": 2,
+    "N": 1,
+    "EOVSA": 1,
+    "SUN": 1,
+    "FSEQ-OFF": 1,
+    "$MK_TABLES": 1,
+    "TRACKTABLE": 1,
+    "TRACK": 1,
+    "FSEQ-ON": 1,
+    "FEDBSEQ-AUTO": 1,
+    "$SCAN-START": 1,
+    "FSEQ-FILE": 1,
+    "NDSEQ-OFF": 1,
+    "FEDB": 1,
+    "TRAJ-FILE": 1,
+    "TRAJ-ON": 1,
+    "ROACHDLACAL": 1,
+    "$ROACH-DLA": 1
+  },
+  "criticality_levels": {
+    "routine": 1262
+  }
+}
